@@ -1,0 +1,57 @@
+name: Verve-Backend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          cd Backend
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Archive Backend
+        run: |
+          mkdir -p $(pwd)/artifact
+          cp -R Backend/* $(pwd)/artifact
+        shell: bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: drop
+          path: artifact
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: drop
+          path: ./Backend
+
+      - name: List files in working directory after download
+        run: ls -R $(pwd)/Backend
+
+      - name: 'Deploy to Azure Web App'
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'vervecobackend'
+          slot-name: 'production'
+          publish-profile: ${{ secrets.VERVEB2B_BACKEND }}
+          package: './Backend'
