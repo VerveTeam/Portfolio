@@ -3,7 +3,6 @@ import { Button } from "../ui/button";
 import { Footer } from "../ui/Footer";
 import { Navbar } from "../ui/Navbar";
 import { Separator } from "../ui/separator";
-import LandingPageCost from "../../assets/LandingPage-Cost.png";
 import AboutUsPageGetStarted from "../../assets/AboutUsPage-GetStarted.png";
 
 export function AboutUsPage() {
