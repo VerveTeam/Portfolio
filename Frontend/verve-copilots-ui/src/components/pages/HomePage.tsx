@@ -55,7 +55,7 @@ export function HomePage() {
               <div className="content-header text-left text-4xl md:text-[48px] font-[500] pb-5 leading-tight">
                 Introducing <br /> good solution
               </div>
-              <div className="content-subtitle md:text-[20px] font-light mb-5 text-left">
+              <div className="content-subtitle md:text-[18px] text-gray-600 mb-5 text-left">
                 Join our community and experience <br/> the benefits today!
               </div>
               <div className="content-action-button flex flex-wrap">
@@ -77,14 +77,14 @@ export function HomePage() {
       {/* Follow up component ends */}
 
       {/* Cost saving component */}
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center md:mb-[100px]">
         <div className="cost-saving container mx-auto px-4 md:px-6 lg:px-8 w-full">
           <div className="cost-saving container content flex flex-col-reverse md:flex-row items-center rounded-[16px] w-3/4 mx-auto">
             <div className="cost-saving-section flex flex-col max-w-2xl md:w-1/2 p-5">
-              <div className="content-header text-left text-4xl md:text-[32px] font-[500] pb-5 leading-tight">
+              <div className="content-header text-left text-3xl md:text-[40px] font-[500] pb-5 leading-tight">
                 Cost saving in <br /> smart way
               </div>
-              <div className="content-subtitle md:text-[16px] font-light mb-5 text-left">
+              <div className="content-subtitle md:text-[16px] text-gray-600 mb-5 text-left">
               Powerful tool that helps you reduce costs and save money on your business operations. With advanced analytics and optimization algorithms, Costsaver analyzes your existing workflows and identifies areas for improvement.
               </div>
               <div className="content-action-button flex flex-wrap">
