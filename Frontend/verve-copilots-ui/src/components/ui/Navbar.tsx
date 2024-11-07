@@ -15,7 +15,7 @@ import {
         <div className="hidden md:block">
           <nav className="flex flex-row space-x-10">
             <a href="/" className="text-md hover:underline text-black hover:text-black">Home</a>
-            <a href="#" className="text-md hover:underline text-black hover:text-black">Products</a>
+            <a href="/products" className="text-md hover:underline text-black hover:text-black">Products</a>
             <a href="/aboutus" className="text-md hover:underline text-black hover:text-black">About us</a>
             <a href="#" className="text-md hover:underline text-black hover:text-black">Contact</a>
           </nav>
@@ -29,7 +29,7 @@ import {
           <SheetContent side="right">
             <nav className="flex flex-col space-y-4">
               <a href="/" className="text-sm hover:underline text-black hover:text-black">Home</a>
-              <a href="#" className="text-sm hover:underline text-black hover:text-black">Products</a>
+              <a href="/products" className="text-sm hover:underline text-black hover:text-black">Products</a>
               <a href="/aboutus" className="text-sm hover:underline text-black hover:text-black">About us</a>
               <a href="#" className="text-sm hover:underline text-black hover:text-black">Contact</a>
             </nav>
