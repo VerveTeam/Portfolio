@@ -18,6 +18,7 @@ import {
             <a href="/products" className="text-md hover:underline text-black hover:text-black">Products</a>
             <a href="/aboutus" className="text-md hover:underline text-black hover:text-black">About us</a>
             <a href="#" className="text-md hover:underline text-black hover:text-black">Contact</a>
+            <a href="/playground" className="text-md hover:underline text-black hover:text-black">Playground</a>
           </nav>
         </div>
         <Sheet>
@@ -32,6 +33,7 @@ import {
               <a href="/products" className="text-sm hover:underline text-black hover:text-black">Products</a>
               <a href="/aboutus" className="text-sm hover:underline text-black hover:text-black">About us</a>
               <a href="#" className="text-sm hover:underline text-black hover:text-black">Contact</a>
+              <a href="/playground" className="text-md hover:underline text-black hover:text-black">Playground</a>
             </nav>
           </SheetContent>
         </Sheet>
